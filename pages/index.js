@@ -46,7 +46,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pb-40")}>
-        <div className={cn("grid grid-cols-2")}>
+        <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("pt-28 pl-6")}>
             <img
               className={cn("rounded-full ")}
@@ -82,7 +82,7 @@ export default function Home(props) {
             PROFESSIONAL SERVICES
           </p>
         </div>
-        <div className={cn("grid grid-cols-3 gap-8")}>
+        <div className={cn("grid md:grid-cols-3 gap-8")}>
           {props.professionalItem.map((item, idx) => (
             <div key={idx} className={cn("col-span-1")}>
               <ProfessionalItem
@@ -105,7 +105,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pt-28 pb-28 p-4")}>
-        <div className={cn("grid grid-cols-2")}>
+        <div className={cn("grid md:grid-cols-2 gap-4")}>
           {props.whyWhereitem.map((item, idx) => (
             <div className={cn("col-span-1")}>
               <WhyWhereItem
@@ -120,7 +120,7 @@ export default function Home(props) {
 
       <section className={cn("pt-20")}>
         <div className={cn("projectInfoItem")}>
-          <div className={cn("grid grid-cols-4")}>
+          <div className={cn("grid md:grid-cols-4")}>
             {props.projectInfoItem.map((item, idx) => (
               <div key={idx} className={cn("col-span-1")}>
                 <ProjectInfoItem
@@ -135,7 +135,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pt-20 pb-20 p-5")}>
-        <div className={cn("grid grid-cols-2")}>
+        <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("col-span-1")}>
             <p className={cn("text-gray-500 ")}>CHECKOUT PRICING</p>
             <p className={cn("text-4xl pt-2 ")}>
@@ -172,7 +172,7 @@ export default function Home(props) {
               erat volutpat.
             </p>
 
-            <div className={cn("grid grid-cols-2")}>
+            <div className={cn("grid md:grid-cols-2")}>
               <div className={cn("col-span-1 relative      ")}>
                 <BusinessCard
                   dolorSign={businessCardPlan.dolorSign}
@@ -185,7 +185,11 @@ export default function Home(props) {
                   construction={businessCardPlan.construction}
                   ReadMoreButtonName={businessCardPlan.ReadMoreButtonName}
                 />
-                <div className={cn("col-span-1 absolute  left-10 pl-44 top-0       ")}>
+                <div
+                  className={cn(
+                    "col-span-1 absolute  left-10 pl-44 top-0       "
+                  )}
+                >
                   <BusinessCardBottom
                     dolorSign={largeBusinessPlan.dolorSign}
                     price={largeBusinessPlan.price}
