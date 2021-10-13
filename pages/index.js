@@ -5,6 +5,10 @@ import NavbarWhite from "../src/components/NavbarWhite";
 import Servicesitem from "../src/components/Servicesitem";
 import AboutItem from "../src/components/AboutItem";
 import ProfessionalItem from "../src/components/ProfessionalItem";
+import TrustItem from "../src/components/TrustItem";
+import ReadMoreButton from "../src/components/ReadMoreButton";
+import WhyWhereItem from "../src/components/WhyWhereItem";
+import ProjectInfoItem from "../src/components/ProjectInfoItem";
 
 export default function Home(props) {
   return (
@@ -49,6 +53,7 @@ export default function Home(props) {
           <div>
             {props.posts_data.map((item, idx) => (
               <AboutItem
+                key={idx}
                 smallTitle={item.smallTitle}
                 titleOne={item.titleOne}
                 description={item.description}
@@ -73,9 +78,8 @@ export default function Home(props) {
         </div>
         <div className={cn("grid grid-cols-3 gap-8")}>
           {props.professionalItem.map((item, idx) => (
-            <div className={cn("col-span-1")}>
+            <div key={idx} className={cn("col-span-1")}>
               <ProfessionalItem
-                key={idx}
                 imageUrl={item.imageUrl}
                 title={item.title}
                 description={item.description}
@@ -83,6 +87,43 @@ export default function Home(props) {
               />
             </div>
           ))}
+        </div>
+      </section>
+
+      <section>
+        <TrustItem
+          smallTitle={"ABOUT COMPANY"}
+          title={"TRUST THE EXPERTS FOR ALL YOUR BUILDING NEEDS"}
+        />
+      </section>
+
+      <section className={cn("pt-28 pb-28 p-4")}>
+        <div className={cn("grid grid-cols-2")}>
+          {props.whyWhereitem.map((item, idx) => (
+            <div className={cn("col-span-1")}>
+              <WhyWhereItem
+                key={idx}
+                text={item.text}
+                imageUrl={item.imageUrl}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className={cn("pt-20")}>
+        <div className={cn("projectInfoItem")}>
+          <div className={cn("grid grid-cols-4")}>
+            {props.projectInfoItem.map((item, idx) => (
+              <div key={idx} className={cn("col-span-1")}>
+                <ProjectInfoItem
+                  imagUrl={item.imagUrl}
+                  number={item.number}
+                  text={item.text}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
@@ -96,6 +137,8 @@ export async function getServerSideProps(context) {
     props: {
       posts_data: response.data.about,
       professionalItem: response.data.professionalItem,
+      whyWhereitem: response.data.whyWhereitem,
+      projectInfoItem: response.data.projectInfoItem,
     }, // will be passed to the page component as props
   };
 }
