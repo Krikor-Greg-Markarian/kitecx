@@ -26,7 +26,7 @@ body {
 }
 
 .projectInfoItem {
-  background-image: url("https://cdn.pixabay.com/photo/2020/03/14/21/56/wine-4931923__340.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118__340.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 450px;
+  min-height: 480px;
 }
 
 input[type="text"] {
