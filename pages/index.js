@@ -6,9 +6,9 @@ import Servicesitem from "../src/components/Servicesitem";
 import AboutItem from "../src/components/AboutItem";
 import ProfessionalItem from "../src/components/ProfessionalItem";
 import TrustItem from "../src/components/TrustItem";
-import ReadMoreButton from "../src/components/ReadMoreButton";
 import WhyWhereItem from "../src/components/WhyWhereItem";
 import ProjectInfoItem from "../src/components/ProjectInfoItem";
+import Footer from "../src/components/Footer";
 
 export default function Home(props) {
   return (
@@ -94,6 +94,7 @@ export default function Home(props) {
         <TrustItem
           smallTitle={"ABOUT COMPANY"}
           title={"TRUST THE EXPERTS FOR ALL YOUR BUILDING NEEDS"}
+          ReadMoreButtonName={"READ MORE"}
         />
       </section>
 
@@ -125,6 +126,38 @@ export default function Home(props) {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className={cn("pt-40")}>
+        <Footer
+          title={"KITECX"}
+          contactUs={"Contact us for incredible interior & architect designs."}
+          ReadMoreButtonName={"READ MORE"}
+          title={"About"}
+          description={
+            "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod."
+          }
+          number={"92 666 888 0000"}
+          hotmailAddress={"contact@example.com"}
+          info={"66 Broklyn Street New York, USA"}
+          Links={"Links"}
+          aboutus={"About Us"}
+          ourMisson={"Our Mission"}
+          meetTheTeam={"Meet the Team"}
+          ourProject={"Our Projects"}
+          contact={"Contact"}
+          Explore={"Explore"}
+          TypesOf={"Types Of Designs"}
+          OurStory={"Our Story"}
+          LatestNews={"Latest News"}
+          HelpCenter={"Help Center"}
+          OurServices={"Our Services"}
+          Newsletter={"Newsletter"}
+          signUp={"Sign up now for weekly news and updates"}
+          copyright={"© Copyright 2021 by Gaviasthemes"}
+          privacy={"Privacy Policy"}
+          termsAndConditions={"Terms & Conditions"}
+        />
       </section>
     </div>
   );
