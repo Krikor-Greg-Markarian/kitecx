@@ -5,9 +5,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaPinterestP,
-  FaTwitch,
   FaTwitter,
-  FaPrint,
 } from "react-icons/fa";
 import cn from "classnames";
 
