@@ -18,11 +18,11 @@ function Footer(props) {
       <div
         className={cn("bg-black pt-12 pb-12 border-b-2 border-gray-500 p-2")}
       >
-        <div className={cn("grid grid-cols-3")}>
+        <div className={cn("grid md:grid-cols-3")}>
           <div className={cn("col-span-1")}>
             <div className={cn("flex")}>
               <div className={cn("flex-shrink")}>
-                <FaHome className={cn("text-white text-3xl")} />
+                <FaHome className={cn("text-white text-3xl pt-1")} />
               </div>
               <div className={cn("flex-shrink")}>
                 <p className={cn("text-white text-3xl")}>{props.title}</p>
@@ -31,9 +31,7 @@ function Footer(props) {
           </div>
           <div className={cn("col-span-1")}>
             <div className={cn("flex")}>
-              <p className={cn("text-gray-500 text-base text-center")}>
-                {props.contactUs}
-              </p>
+              <p className={cn("text-gray-500 text-2xl")}>{props.contactUs}</p>
             </div>
           </div>
           <div className={cn("col-span-1")}>
@@ -48,7 +46,7 @@ function Footer(props) {
       </div>
 
       <div className={cn("blackCircleDesign")}>
-        <div className={cn("grid grid-cols-6")}>
+        <div className={cn("grid md:grid-cols-6")}>
           <div className={cn("col-span-2 p-2 transform translate-y-28")}>
             <p className={cn("text-white text-2xl")}>{props.title}</p>
             <p
@@ -134,7 +132,7 @@ function Footer(props) {
               {props.contact}
             </p>
           </div>
-          <div className={cn("col-span-1 transform translate-y-28 pl-2")}>
+          <div className={cn("col-span-1 transform translate-y-28")}>
             <p className={cn("text-white text-2xl")}>{props.Explore}</p>
             <p
               className={cn(
@@ -172,7 +170,7 @@ function Footer(props) {
               {props.OurServices}
             </p>
           </div>
-          <div className={cn("col-span-2 transform translate-y-28 pl-2")}>
+          <div className={cn("col-span-2 transform translate-y-28 pl-3")}>
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
             <p className={cn("text-gray-500 text-lg pt-6 pb-4")}>
               {props.signUp}
