@@ -73,7 +73,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("bg-gray-200 p-4")}>
+      <section className={cn("bg-gray-200 pb-28 p-4")}>
         <div className={cn("pt-32 pb-12")}>
           <p className={cn("text-gray-500 font-normal text-lg text-center")}>
             WHAT WE’RE OFFERING
@@ -96,7 +96,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section>
+      <section className={cn("pt-28")}>
         <TrustItem
           smallTitle={"ABOUT COMPANY"}
           title={"TRUST THE EXPERTS FOR ALL YOUR BUILDING NEEDS"}
