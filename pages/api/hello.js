@@ -69,6 +69,44 @@ export default function handler(req, res) {
         ReadMoreButtonName: "READ MORE",
       },
     ],
+    whyWhereitem: [
+      {
+        text: "Why Should You Choose Kitecs?",
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756__340.jpg",
+      },
+      {
+        text: "We’re Award Winnings Studio",
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351__340.jpg",
+      },
+    ],
+    projectInfoItem: [
+      {
+        imagUrl:
+          "https://cdn.pixabay.com/photo/2021/08/23/04/02/woman-6566600__340.jpg",
+        number: "6,816",
+        text: "PROJECT SUCCESS",
+      },
+      {
+        imagUrl:
+          "https://cdn.pixabay.com/photo/2020/11/08/00/17/waterfall-5722620__340.jpg",
+        number: "916",
+        text: "TEAM MEMBERS",
+      },
+      {
+        imagUrl:
+          "https://cdn.pixabay.com/photo/2021/10/03/04/21/woman-6676901__340.jpg",
+        number: "218",
+        text: "SERVICE PROVIDING",
+      },
+      {
+        imagUrl:
+          "https://cdn.pixabay.com/photo/2020/11/24/11/24/sika-deer-5772242__340.jpg",
+        number: "9,660",
+        text: "HAPPY CUSTOMERS",
+      },
+    ],
   };
 
   res.status(200).json(data);
