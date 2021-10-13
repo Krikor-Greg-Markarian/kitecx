@@ -9,8 +9,14 @@ import TrustItem from "../src/components/TrustItem";
 import WhyWhereItem from "../src/components/WhyWhereItem";
 import ProjectInfoItem from "../src/components/ProjectInfoItem";
 import Footer from "../src/components/Footer";
+import ReadMoreButton from "../src/components/ReadMoreButton";
+import PricingPlan from "../src/components/PricingPlan";
+import BusinessCard from "../src/components/BusinessCard";
+import BusinessCardBottom from "../src/components/BusinessCardBottom";
 
 export default function Home(props) {
+  const businessCardPlan = props.businessCard.standardBusiness;
+  const largeBusinessPlan = props.businessCard.largeBusiness;
   return (
     <div className={cn("font-bold")}>
       <section>
@@ -128,6 +134,76 @@ export default function Home(props) {
         </div>
       </section>
 
+      <section className={cn("pt-20 pb-20 p-5")}>
+        <div className={cn("grid grid-cols-2")}>
+          <div className={cn("col-span-1")}>
+            <p className={cn("text-gray-500 ")}>CHECKOUT PRICING</p>
+            <p className={cn("text-4xl pt-2 ")}>
+              CHOOSE YOUR OPTIMAL PRICING PLAN
+            </p>
+
+            <div className={cn("flex pt-12")}>
+              <div className={cn("flex-shrink")}>
+                <ReadMoreButton
+                  className={cn(
+                    "bg-gray-200 text-black hover:bg-black hover:text-white text-center text-sm p-3 font-bold"
+                  )}
+                  ReadMoreButtonName={" / Get Right Solutiuons"}
+                />
+              </div>
+              <div className={cn("flex-shrink pl-6")}>
+                <ReadMoreButton
+                  className={cn(
+                    "bg-gray-200 text-black hover:bg-black hover:text-white  text-center text-sm p-3 font-bold"
+                  )}
+                  ReadMoreButtonName={" / Expert Architecture"}
+                />
+              </div>
+              <div className={cn("flex-grow")}></div>
+            </div>
+            {props.pricingPlan.map((item, idx) => (
+              <PricingPlan title={item.title} description={item.description} />
+            ))}
+          </div>
+          <div className={cn("col-span-1")}>
+            <p className={cn("text-gray-500 pt-8 pl-28")}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+            </p>
+
+            <div className={cn("grid grid-cols-2")}>
+              <div className={cn("col-span-1 relative      ")}>
+                <BusinessCard
+                  dolorSign={businessCardPlan.dolorSign}
+                  price={businessCardPlan.price}
+                  month={businessCardPlan.month}
+                  title={businessCardPlan.title}
+                  visualization={businessCardPlan.visualization}
+                  planning={businessCardPlan.planning}
+                  selection={businessCardPlan.selection}
+                  construction={businessCardPlan.construction}
+                  ReadMoreButtonName={businessCardPlan.ReadMoreButtonName}
+                />
+                <div className={cn("col-span-1 absolute  left-10 pl-44 top-0       ")}>
+                  <BusinessCardBottom
+                    dolorSign={largeBusinessPlan.dolorSign}
+                    price={largeBusinessPlan.price}
+                    month={largeBusinessPlan.month}
+                    title={largeBusinessPlan.title}
+                    visualization={largeBusinessPlan.visualization}
+                    planning={largeBusinessPlan.planning}
+                    selection={largeBusinessPlan.selection}
+                    construction={largeBusinessPlan.construction}
+                    ReadMoreButtonName={largeBusinessPlan.ReadMoreButtonName}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className={cn("pt-40")}>
         <Footer
           title={"KITECX"}
@@ -172,6 +248,8 @@ export async function getServerSideProps(context) {
       professionalItem: response.data.professionalItem,
       whyWhereitem: response.data.whyWhereitem,
       projectInfoItem: response.data.projectInfoItem,
+      pricingPlan: response.data.pricingPlan,
+      businessCard: response.data.businessCard,
     }, // will be passed to the page component as props
   };
 }
