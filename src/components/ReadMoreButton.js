@@ -3,9 +3,7 @@ import cn from "classnames";
 
 function ReadMoreButton(props) {
   return (
-    <div className={cn(props.className)}>
-      <button>{props.ReadMoreButtonName}</button>
-    </div>
+    <button className={cn(props.className)}>{props.ReadMoreButtonName}</button>
   );
 }
 
