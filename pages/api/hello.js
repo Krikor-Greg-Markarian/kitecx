@@ -107,6 +107,48 @@ export default function handler(req, res) {
         text: "HAPPY CUSTOMERS",
       },
     ],
+    pricingPlan: [
+      {
+        title: "Interior Sketch",
+        description:
+          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+      },
+      {
+        title: "3D Modeling",
+        description:
+          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+      },
+      {
+        title: "Room Measurement",
+        description:
+          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+      },
+    ],
+
+    businessCard: {
+      standardBusiness: {
+        dolorSign: "$",
+        price: "60",
+        month: "/MONTHLY",
+        title: "Standard Business",
+        visualization: "3D Visualization",
+        planning: "Planning Solution",
+        selection: "Selection of Materials",
+        construction: "10 Construction Drawings",
+        ReadMoreButtonName: "CHOOSE PLAN",
+      },
+      largeBusiness: {
+        dolorSign: "$",
+        price: "89",
+        month: "/MONTHLY",
+        title: "Standard Business",
+        visualization: "3D Visualization",
+        planning: "Planning Solution",
+        selection: "Selection of Materials",
+        construction: "15 Construction Drawings",
+        ReadMoreButtonName: "CHOOSE PLAN",
+      },
+    },
   };
 
   res.status(200).json(data);
