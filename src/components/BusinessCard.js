@@ -5,7 +5,7 @@ import ReadMoreButton from "./ReadMoreButton";
 function BusinessCard(props) {
   return (
     <div className={cn("pt-14")}>
-      <div className={cn("bg-black p-11 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110")}>
+      <div className={cn("bg-black p-11 ")}>
         <div className={cn("pb-8 text-center")}>
           <sup className={cn("text-white inline font-normal text-3xl")}>
             {props.dolorSign}
