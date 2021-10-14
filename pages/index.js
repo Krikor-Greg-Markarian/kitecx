@@ -137,7 +137,7 @@ export default function Home(props) {
       <section className={cn("pt-20 pb-20 p-5")}>
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("col-span-1")}>
-            <p className={cn("text-gray-500 ")}>CHECKOUT PRICING</p>
+            <p className={cn("text-gray-500 font-normal ")}>CHECKOUT PRICING</p>
             <p className={cn("text-4xl pt-2 ")}>
               CHOOSE YOUR OPTIMAL PRICING PLAN
             </p>
@@ -166,14 +166,14 @@ export default function Home(props) {
             ))}
           </div>
           <div className={cn("col-span-1")}>
-            <p className={cn("text-gray-500 pt-8 pl-28")}>
+            <p className={cn("text-gray-500 pt-8 pl-28 font-normal")}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat volutpat.
             </p>
 
             <div className={cn("grid md:grid-cols-2")}>
-              <div className={cn("col-span-1 relative      ")}>
+              <div className={cn("col-span-1 relative")}>
                 <BusinessCard
                   dolorSign={businessCardPlan.dolorSign}
                   price={businessCardPlan.price}
@@ -185,11 +185,7 @@ export default function Home(props) {
                   construction={businessCardPlan.construction}
                   ReadMoreButtonName={businessCardPlan.ReadMoreButtonName}
                 />
-                <div
-                  className={cn(
-                    "col-span-1 absolute  left-10 pl-44 top-0       "
-                  )}
-                >
+                <div className={cn("col-span-1 absolute left-60 top-3 ")}>
                   <BusinessCardBottom
                     dolorSign={largeBusinessPlan.dolorSign}
                     price={largeBusinessPlan.price}
