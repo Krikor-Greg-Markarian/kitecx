@@ -25,7 +25,9 @@ function Footer(props) {
                 <FaHome className={cn("text-white text-3xl pt-1")} />
               </div>
               <div className={cn("flex-shrink")}>
-                <p className={cn("text-white text-3xl")}>{props.title}</p>
+                <p className={cn("text-white font-normal text-3xl")}>
+                  {props.title}
+                </p>
               </div>
             </div>
           </div>
@@ -100,35 +102,35 @@ function Footer(props) {
             <p className={cn("text-white text-2xl")}>{props.Links}</p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-6 cursor-pointer hover:text-white"
+                "text-gray-500  pt-6 cursor-pointer hover:text-white"
               )}
             >
               {props.aboutus}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.ourMisson}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.meetTheTeam}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.ourProject}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.contact}
@@ -138,35 +140,35 @@ function Footer(props) {
             <p className={cn("text-white text-2xl")}>{props.Explore}</p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-6 cursor-pointer hover:text-white"
+                "text-gray-500 pt-6 cursor-pointer hover:text-white"
               )}
             >
               {props.TypesOf}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.OurStory}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.LatestNews}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.HelpCenter}
             </p>
             <p
               className={cn(
-                "text-gray-500 text-lg pt-2 cursor-pointer hover:text-white"
+                "text-gray-500 pt-2 cursor-pointer hover:text-white"
               )}
             >
               {props.OurServices}
@@ -174,9 +176,7 @@ function Footer(props) {
           </div>
           <div className={cn("col-span-2 transform translate-y-28 pl-3")}>
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
-            <p className={cn("text-gray-500 text-lg pt-6 pb-4")}>
-              {props.signUp}
-            </p>
+            <p className={cn("text-gray-500 pt-6 pb-4")}>{props.signUp}</p>
             <input
               className={cn("pb-5 focus:outline-none bg-transparent")}
               placeholder="Email address"
