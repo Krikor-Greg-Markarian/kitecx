@@ -182,7 +182,7 @@ function Footer(props) {
 
             <input
               className={cn(
-                "pb-5 focus:outline-none bg-transparent inline w-11/12"
+                "pb-5 focus:outline-none bg-transparent inline w-11/12 text-gray-500"
               )}
               placeholder="Email address"
               type="text"
