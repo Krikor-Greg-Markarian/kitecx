@@ -9,7 +9,9 @@ import {
   FaFacebookSquare,
   FaPinterestP,
   FaInstagram,
+  FaLongArrowAltRight,
 } from "react-icons/fa";
+import { GrFormNextLink } from "react-icons/gr";
 import ReadMoreButton from "./ReadMoreButton";
 
 function Footer(props) {
@@ -177,12 +179,21 @@ function Footer(props) {
           <div className={cn("col-span-2 transform translate-y-28 pl-3")}>
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
             <p className={cn("text-gray-500 pt-6 pb-4")}>{props.signUp}</p>
+
             <input
-              className={cn("pb-5 focus:outline-none bg-transparent")}
+              className={cn(
+                "pb-5 focus:outline-none bg-transparent inline w-11/12"
+              )}
               placeholder="Email address"
               type="text"
               name=""
               id=""
+            />
+
+            <FaLongArrowAltRight
+              className={cn(
+                "text-white text-2xl inline hover:text-yellow-600 cursor-pointer"
+              )}
             />
             <div className={cn("pt-5")}>
               <FaTwitter
