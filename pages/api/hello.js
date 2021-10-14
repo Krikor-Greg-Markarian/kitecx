@@ -30,7 +30,7 @@ export default function handler(req, res) {
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__480.jpg",
+          "https://cdn.pixabay.com/photo/2020/11/08/00/17/waterfall-5722620__340.jpg",
         title: "Architecture",
         description:
           "Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do.",
@@ -38,7 +38,7 @@ export default function handler(req, res) {
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__480.jpg",
+          "https://cdn.pixabay.com/photo/2021/09/17/12/12/coffee-6632524__340.jpg",
         title: "Exterior Design",
         description:
           "Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do.",
@@ -46,7 +46,7 @@ export default function handler(req, res) {
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__480.jpg",
+          "https://cdn.pixabay.com/photo/2020/07/30/10/26/asian-woman-5450041__340.jpg",
         title: "Furniture & Decor",
         description:
           "Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do.",
@@ -54,7 +54,7 @@ export default function handler(req, res) {
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__480.jpg",
+          "https://cdn.pixabay.com/photo/2015/06/01/00/20/man-792821__340.jpg",
         title: "Designing Solutions",
         description:
           "Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do.",
@@ -62,7 +62,7 @@ export default function handler(req, res) {
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__480.jpg",
+          "https://cdn.pixabay.com/photo/2021/09/29/13/17/redwood-national-park-6667452__340.jpg",
         title: "Custom Solution",
         description:
           "Lorem ipsum dolor sit amet, consectetur notted adipiscing elit sed do.",
