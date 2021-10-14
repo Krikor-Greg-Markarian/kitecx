@@ -28,7 +28,7 @@ function ProfessionalItem(props) {
       >
         {props.title}
       </p>
-      <p className={cn("text-gray-500 pt-6 pb-6 w-9/12")}>
+      <p className={cn("text-gray-500 font-normal pt-6 pb-6 w-9/12")}>
         {props.description}
       </p>
       <ReadMoreButton
