@@ -9,8 +9,9 @@ function AboutItem(props) {
       <p className={cn("text-gray-500 text-base pt-10")}>{props.description}</p>
 
       <div class="grid grid-rows-1 md:grid-flow-col pt-12">
-        <div className="row-span-1 ">
+        <div className="row-span-1">
           <img
+            className={cn("w-full")}
             src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_233,h_244/https://www.gavias-theme.com/wp/kitecx/wp-content/uploads/2021/04/image-4.jpg"
             alt=""
           />
