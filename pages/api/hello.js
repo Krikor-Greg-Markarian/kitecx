@@ -11,10 +11,10 @@ export default function handler(req, res) {
         description:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.",
         commpassImageUrl:
-          "https://cdn.pixabay.com/photo/2017/11/13/22/12/compass-2946959__340.jpg",
+          "https://cdn3.iconfinder.com/data/icons/real-estate-line-12/100/33-house_sizes_ruler_House_Measurement_ArchitectConstruction-512.png",
         title: "There are many variations passages of available.",
         housemapImageUrl:
-          "https://cdn.pixabay.com/photo/2020/03/01/00/55/compass-4891499__340.jpg",
+          "https://cdn3.iconfinder.com/data/icons/real-estate-line-12/100/10-architecture_house_Blueprint_Construction_PlanHouse_Sizereal_estateProperty-512.png",
         anotherTitle: "There are many variations passages of available.",
       },
     ],
