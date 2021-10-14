@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaCouch, FaRegBuilding, FaBuilding } from "react-icons/fa";
 import ReadMoreButton from "./ReadMoreButton";
 import cn from "classnames";
 import styles from "../../styles/rollOver.module.css";
@@ -33,7 +32,9 @@ function ProfessionalItem(props) {
         {props.description}
       </p>
       <ReadMoreButton
-        className={cn("font-bold text-sm", { "text-white": isHovered })}
+        className={cn("font-bold text-sm", {
+          "text-white underline": isHovered,
+        })}
         ReadMoreButtonName={props.ReadMoreButtonName}
       />
     </div>
