@@ -104,7 +104,9 @@ export default function Home(props) {
         />
       </section>
 
-      <section className={cn("pt-28 pb-28 p-4 flex justify-center items-center")}>
+      <section
+        className={cn("pt-28 pb-28 p-4 flex justify-center items-center")}
+      >
         <div className={cn("grid md:grid-cols-2 gap-8")}>
           {props.whyWhereitem.map((item, idx) => (
             <div className={cn("col-span-1")}>
@@ -162,7 +164,11 @@ export default function Home(props) {
               <div className={cn("flex-grow")}></div>
             </div>
             {props.pricingPlan.map((item, idx) => (
-              <PricingPlan title={item.title} description={item.description} />
+              <PricingPlan
+                key={idx}
+                title={item.title}
+                description={item.description}
+              />
             ))}
           </div>
           <div className={cn("col-span-1")}>
