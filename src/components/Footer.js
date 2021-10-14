@@ -18,7 +18,7 @@ function Footer(props) {
       <div
         className={cn("bg-black pt-12 pb-12 border-b-2 border-gray-500 p-2")}
       >
-        <div className={cn("grid md:grid-cols-3")}>
+        <div className={cn("grid md:grid-cols-4")}>
           <div className={cn("col-span-1")}>
             <div className={cn("flex")}>
               <div className={cn("flex-shrink")}>
@@ -29,15 +29,17 @@ function Footer(props) {
               </div>
             </div>
           </div>
-          <div className={cn("col-span-1")}>
+          <div className={cn("col-span-2")}>
             <div className={cn("flex")}>
-              <p className={cn("text-gray-500 text-2xl")}>{props.contactUs}</p>
+              <p className={cn("text-gray-500 pt-2 text-lg")}>
+                {props.contactUs}
+              </p>
             </div>
           </div>
           <div className={cn("col-span-1")}>
             <ReadMoreButton
               className={cn(
-                "bg-white p-3 w-4/12 float-right hover:bg-yellow-500  transition duration-500 ease-in-out"
+                "bg-white p-3 w-5/12 float-right hover:bg-yellow-500  transition duration-500 ease-in-out"
               )}
               ReadMoreButtonName={props.ReadMoreButtonName}
             />

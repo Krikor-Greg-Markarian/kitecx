@@ -19,8 +19,10 @@ function PricingPlan(props) {
           </div>
         </div>
         <div className={cn("flex-shrink pl-6")}>
-          <p className = {cn("text-lg")}>{props.title}</p>
-          <p className={cn("text-gray-500 font-normal pt-5")}>{props.description}</p>
+          <p className={cn("text-lg")}>{props.title}</p>
+          <p className={cn("text-gray-500 font-normal pt-5")}>
+            {props.description}
+          </p>
         </div>
       </div>
     </div>

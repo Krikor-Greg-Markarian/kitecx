@@ -1,5 +1,4 @@
 .rollOver {
   background-color: black !important;
-  background-image: none !important;
+  transition-duration: 0.4s;
 }
-

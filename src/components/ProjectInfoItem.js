@@ -13,10 +13,12 @@ function ProjectInfoItem(props) {
           alt="icons"
         />
       </div>
-      <p className={cn("text-white text-4xl text-center pt-4")}>
+      <p className={cn("text-white text-4xl text-center pt-5")}>
         {props.number}
       </p>
-      <p className={cn("text-gray-500 text-center pt-2")}>{props.text}</p>
+      <p className={cn("text-gray-500 text-center text-sm pt-2")}>
+        {props.text}
+      </p>
     </div>
   );
 }
