@@ -13,10 +13,13 @@ import ReadMoreButton from "../src/components/ReadMoreButton";
 import PricingPlan from "../src/components/PricingPlan";
 import BusinessCard from "../src/components/BusinessCard";
 import BusinessCardBottom from "../src/components/BusinessCardBottom";
+import TestZIndex from "../src/components/TestZIndex";
+import { useState } from "react";
 
 export default function Home(props) {
   const businessCardPlan = props.businessCard.standardBusiness;
   const largeBusinessPlan = props.businessCard.largeBusiness;
+  const [isHovered, setisHovered] = useState(false);
   return (
     <div className={cn("font-bold")}>
       <section>
@@ -179,19 +182,37 @@ export default function Home(props) {
             </p>
 
             <div className={cn("grid md:grid-cols-2")}>
-              <div className={cn("col-span-1 relative")}>
-                <BusinessCard
-                  dolorSign={businessCardPlan.dolorSign}
-                  price={businessCardPlan.price}
-                  month={businessCardPlan.month}
-                  title={businessCardPlan.title}
-                  visualization={businessCardPlan.visualization}
-                  planning={businessCardPlan.planning}
-                  selection={businessCardPlan.selection}
-                  construction={businessCardPlan.construction}
-                  ReadMoreButtonName={businessCardPlan.ReadMoreButtonName}
-                />
-                <div className={cn("col-span-1 absolute left-60 top-3 ")}>
+              <div className={cn("relative")}>
+                <div className={cn("col-span-1 absolute z-20")}>
+                  <BusinessCard
+                    dolorSign={businessCardPlan.dolorSign}
+                    price={businessCardPlan.price}
+                    month={businessCardPlan.month}
+                    title={businessCardPlan.title}
+                    visualization={businessCardPlan.visualization}
+                    planning={businessCardPlan.planning}
+                    selection={businessCardPlan.selection}
+                    construction={businessCardPlan.construction}
+                    ReadMoreButtonName={businessCardPlan.ReadMoreButtonName}
+                  />
+                </div>
+                <div
+                  className={cn(
+                    "col-span-1 absolute left-52 top-3 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110",
+                    {
+                      "z-10": !isHovered,
+                    },
+                    {
+                      "z-30": isHovered,
+                    }
+                  )}
+                  onMouseEnter={() => {
+                    setisHovered(true);
+                  }}
+                  onMouseLeave={() => {
+                    setisHovered(false);
+                  }}
+                >
                   <BusinessCardBottom
                     dolorSign={largeBusinessPlan.dolorSign}
                     price={largeBusinessPlan.price}
@@ -208,6 +229,9 @@ export default function Home(props) {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <TestZIndex />
       </section>
 
       <section className={cn("pt-40")}>
