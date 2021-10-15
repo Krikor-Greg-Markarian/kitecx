@@ -5,7 +5,7 @@ import ReadMoreButton from "./ReadMoreButton";
 function BusinessCard(props) {
   return (
     <div className={cn("pt-14")}>
-      <div className={cn("bg-black p-11 ")}>
+      <div className={cn("bg-black p-14")}>
         <div className={cn("pb-8 text-center")}>
           <sup className={cn("text-white inline font-normal text-3xl")}>
             {props.dolorSign}
@@ -40,7 +40,7 @@ function BusinessCard(props) {
         <div className={cn("pt-6 pb-2 text-center")}>
           <ReadMoreButton
             className={cn(
-              "bg-white p-3 w-8/12 hover:bg-yellow-500  transition duration-500 ease-in-out text-sm font-bold"
+              "bg-white p-3 w-12/12 hover:bg-yellow-500  transition duration-500 ease-in-out text-sm font-bold"
             )}
             ReadMoreButtonName={props.ReadMoreButtonName}
           />
