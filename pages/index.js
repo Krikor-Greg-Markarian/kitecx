@@ -230,9 +230,9 @@ export default function Home(props) {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <TestZIndex />
-      </section>
+      </section> */}
 
       <section className={cn("pt-40")}>
         <Footer
