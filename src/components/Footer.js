@@ -54,7 +54,7 @@ function Footer(props) {
       <div className={cn("blackCircleDesign")}>
         <div className={cn("grid md:grid-cols-6")}>
           <div className={cn("col-span-2 p-2 transform translate-y-28")}>
-            <p className={cn("text-white text-2xl")}>{props.title}</p>
+            <p className={cn("text-white text-2xl")}>{props.subTitle}</p>
             <p
               className={cn(
                 "border-b-2 border-gray-500 text-lg text-gray-500 pb-4 pt-4"
