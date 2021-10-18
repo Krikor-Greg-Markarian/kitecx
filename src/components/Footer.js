@@ -20,7 +20,7 @@ function Footer(props) {
       <div
         className={cn("bg-black pt-12 pb-12 border-b-2 border-gray-500 p-2")}
       >
-        <div className={cn("grid md:grid-cols-4")}>
+        <div className={cn("grid md:grid-cols-4 md:container mx-auto w-8/12")}>
           <div className={cn("col-span-1")}>
             <div className={cn("flex")}>
               <div className={cn("flex-shrink")}>
@@ -43,7 +43,7 @@ function Footer(props) {
           <div className={cn("col-span-1")}>
             <ReadMoreButton
               className={cn(
-                "bg-white p-3 w-5/12 hover:bg-yellow-500 sm:float-left md:float-right sm:mt-4 sm:w-6/12 sm:py-2 md:w-5/12 md:py-0 md:mt-0 transition duration-500 ease-in-out"
+                " p-4 w-5/12 bg-yellow-500 sm:float-left md:float-right sm:mt-4 sm:w-6/12 sm:py-2 md:w-5/12 md:py-0 md:mt-0 transition duration-500 ease-in-out"
               )}
               ReadMoreButtonName={props.ReadMoreButtonName}
             />
@@ -52,7 +52,7 @@ function Footer(props) {
       </div>
 
       <div className={cn("blackCircleDesign")}>
-        <div className={cn("grid md:grid-cols-6")}>
+        <div className={cn("grid md:grid-cols-6 md:container mx-auto w-8/12")}>
           <div className={cn("col-span-2 p-2 transform translate-y-28")}>
             <p className={cn("text-white text-2xl")}>{props.subTitle}</p>
             <p
@@ -236,29 +236,31 @@ function Footer(props) {
       </div>
 
       <div className={cn("bg-black pt-2 pb-2")}>
-        <div className={cn("inline")}>
-          <p
-            className={cn(
-              "text-gray-500 sm:mt-20 pb-10 sm:text-center md:text-left pb-0 md:mt-0"
-            )}
-          >
-            {props.copyright}
-          </p>
-          <div className={cn("sm:text-center md:text-right ")}>
-            <li
+        <div className={cn("md:container mx-auto w-8/12")}>
+          <div className={cn("inline")}>
+            <p
               className={cn(
-                "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline"
+                "text-gray-500 sm:mt-20 pb-10 sm:text-center md:text-left pb-0 md:mt-0"
               )}
             >
-              <a href="">{props.privacy}</a>
-            </li>
-            <li
-              className={cn(
-                "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline pl-4"
-              )}
-            >
-              <a href="">{props.termsAndConditions}</a>
-            </li>
+              {props.copyright}
+            </p>
+            <div className={cn("sm:text-center md:text-right ")}>
+              <li
+                className={cn(
+                  "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline"
+                )}
+              >
+                <a href="">{props.privacy}</a>
+              </li>
+              <li
+                className={cn(
+                  "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline pl-4"
+                )}
+              >
+                <a href="">{props.termsAndConditions}</a>
+              </li>
+            </div>
           </div>
         </div>
       </div>
