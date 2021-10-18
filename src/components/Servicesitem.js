@@ -11,12 +11,16 @@ function Servicesitem(props) {
             {props.title}
           </p>
           <div className={cn("text-center pt-4")}>
-            <li className={cn("inline text-white font-bold")}>
+            <li
+              className={cn(
+                "inline text-white hover:underline text-sm font-bold"
+              )}
+            >
               <Link href="">
                 <a href="">{props.homeTag}</a>
               </Link>
             </li>
-            <li className={cn("inline text-white font-bold")}>
+            <li className={cn("inline text-white text-sm font-bold")}>
               <Link href="">
                 <a href="">{props.servicesTag}</a>
               </Link>
