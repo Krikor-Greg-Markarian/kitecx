@@ -110,7 +110,7 @@ export default function Home(props) {
       <section
         className={cn("pt-28 pb-14 p-4 flex justify-center items-center")}
       >
-        <div className={cn("grid md:grid-cols-2 gap-8")}>
+        <div className={cn("grid md:grid-cols-1 lg:grid-cols-2 gap-8")}>
           {props.whyWhereitem.map((item, idx) => (
             <div className={cn("col-span-1")}>
               <WhyWhereItem
@@ -181,7 +181,7 @@ export default function Home(props) {
               erat volutpat.
             </p>
 
-            <div className={cn("grid md:grid-cols-2")}>
+            <div className={cn("grid md:grid-cols-1")}>
               <div className={cn("relative")}>
                 <div className={cn("col-span-1 absolute z-20")}>
                   <BusinessCard
