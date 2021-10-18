@@ -43,7 +43,7 @@ export default function Home(props) {
       <section>
         <Servicesitem
           title={"SERVICES ||"}
-          homeTag={"HOME / "}
+          homeTag={"HOME  /  "}
           servicesTag={"SERVICES ||"}
         />
       </section>
