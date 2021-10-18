@@ -6,7 +6,7 @@ function TrustItem(props) {
   return (
     <div>
       <div className={cn("blackBackground")}>
-        <div className={cn("transform translate-y-36")}>
+        <div className={cn("transform translate-y-16")}>
           <p className={cn("text-gray-500 font-normal text-lg text-center")}>
             {props.smallTitle}
           </p>
