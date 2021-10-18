@@ -184,7 +184,7 @@ function Footer(props) {
           </div>
           <div
             className={cn(
-              "col-span-2 transform translate-y-28 pl-3 sm:mt-8 md:mt-0"
+              "col-span-2 transform translate-y-28 pl-3 sm:mb-10 md:mt-0"
             )}
           >
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
@@ -235,7 +235,7 @@ function Footer(props) {
         </div>
       </div>
 
-      <div className={cn("bg-black pt-12 pb-12")}>
+      <div className={cn("bg-black pt-2 pb-2")}>
         <div className={cn("inline")}>
           <p
             className={cn(
