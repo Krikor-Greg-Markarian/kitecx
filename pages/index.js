@@ -112,12 +112,8 @@ export default function Home(props) {
       >
         <div className={cn("grid md:grid-cols-1 lg:grid-cols-2 gap-8")}>
           {props.whyWhereitem.map((item, idx) => (
-            <div className={cn("col-span-1")}>
-              <WhyWhereItem
-                key={idx}
-                text={item.text}
-                imageUrl={item.imageUrl}
-              />
+            <div className={cn("col-span-1")} key={idx}>
+              <WhyWhereItem text={item.text} imageUrl={item.imageUrl} />
             </div>
           ))}
         </div>
