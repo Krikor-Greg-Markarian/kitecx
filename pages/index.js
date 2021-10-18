@@ -236,7 +236,7 @@ export default function Home(props) {
           title={"KITECX"}
           contactUs={"Contact us for incredible interior & architect designs."}
           ReadMoreButtonName={"READ MORE"}
-          title={"About"}
+          subTitle={"About"}
           description={
             "Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod."
           }
