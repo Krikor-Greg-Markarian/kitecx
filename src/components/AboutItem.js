@@ -8,7 +8,7 @@ function AboutItem(props) {
       <p className={cn("text-4xl font-bold")}>{props.titleOne}</p>
       <p className={cn("text-gray-500 text-base pt-10")}>{props.description}</p>
 
-      <div class="grid grid-rows-1 md:grid-flow-col pt-12">
+      <div className="grid grid-rows-1 md:grid-flow-col pt-12">
         <div className="row-span-1">
           <div className={cn("sm:w-60 h-60")}>
             <img
