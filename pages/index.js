@@ -48,7 +48,7 @@ export default function Home(props) {
         />
       </section>
 
-      <section className={cn("pb-40")}>
+      <section className={cn("pb-40 md:container mx-auto w-8/12")}>
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("pt-28 pl-6")}>
             <img
@@ -77,6 +77,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("bg-gray-200 pb-28 p-4")}>
+        <div className={cn("md:container mx-auto w-8/12")}>
         <div className={cn("pt-32 pb-12")}>
           <p className={cn("text-gray-500 font-normal text-lg text-center")}>
             WHAT WE’RE OFFERING
@@ -97,6 +98,8 @@ export default function Home(props) {
             </div>
           ))}
         </div>
+        </div>
+       
       </section>
 
       <section className={cn("pt-28")}>
@@ -121,7 +124,7 @@ export default function Home(props) {
 
       <section className={cn("pb-12")}>
         <div className={cn("projectInfoItem")}>
-          <div className={cn("grid md:grid-cols-4")}>
+          <div className={cn("grid md:grid-cols-4 md:container mx-auto w-8/12")}>
             {props.projectInfoItem.map((item, idx) => (
               <div key={idx} className={cn("col-span-1")}>
                 <ProjectInfoItem
@@ -135,7 +138,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("p-5")}>
+      <section className={cn("p-5 md:container mx-auto w-8/12")}>
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("col-span-1")}>
             <p className={cn("text-gray-500 font-normal ")}>CHECKOUT PRICING</p>
@@ -227,9 +230,15 @@ export default function Home(props) {
           </div>
         </div>
       </section>
-      {/* <section>
+
+
+
+      <section>
         <TestZIndex />
-      </section> */}
+      </section>
+
+
+
 
       <section className={cn("pt-40 sm:mt-96 md:mt-0")}>
         <Footer
