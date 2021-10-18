@@ -33,14 +33,18 @@ const TestZIndex = () => {
 
     //   </div>
     // </div>
-    <div className = {cn("relative")}>
-      <div className = {cn("bg-red-800 w-40 h-40 absolute z-20")}>
 
-      </div>
-      <div className = {cn("bg-blue-800 w-40 h-40 absolute top-20 left-20", {"z-10" : !isHovered}, {"z-20" : isHovered} )} onMouseEnter={()=>{setisHovered(true);}} onMouseLeave={()=>{setisHovered(false);}}  >
+    // <div className = {cn("relative")}>
+    //   <div className = {cn("bg-red-800 w-40 h-40 absolute z-20")}>
 
-      </div>
-    </div>
+    //   </div>
+    //   <div className = {cn("bg-blue-800 w-40 h-40 absolute top-20 left-20", {"z-10" : !isHovered}, {"z-20" : isHovered} )} onMouseEnter={()=>{setisHovered(true);}} onMouseLeave={()=>{setisHovered(false);}}  >
+
+    //   </div>
+
+    // </div>
+
+    <div></div>
   );
 };
 
