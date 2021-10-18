@@ -43,7 +43,7 @@ function Footer(props) {
           <div className={cn("col-span-1")}>
             <ReadMoreButton
               className={cn(
-                "bg-white p-3 w-5/12 hover:bg-yellow-500 sm:float-left md:float-right transition duration-500 ease-in-out"
+                "bg-white p-3 w-5/12 hover:bg-yellow-500 sm:float-left md:float-right sm:mt-4 sm:w-6/12 sm:py-2 md:w-5/12 md:py-0 md:mt-0 transition duration-500 ease-in-out"
               )}
               ReadMoreButtonName={props.ReadMoreButtonName}
             />
@@ -184,7 +184,7 @@ function Footer(props) {
           </div>
           <div
             className={cn(
-              "col-span-2 transform translate-y-28 pl-3 sm:mt-3 md:mt-0"
+              "col-span-2 transform translate-y-28 pl-3 sm:mt-8 md:mt-0"
             )}
           >
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
@@ -192,7 +192,7 @@ function Footer(props) {
 
             <input
               className={cn(
-                "pb-5 focus:outline-none bg-transparent inline w-11/12 text-gray-500"
+                "pb-5 focus:outline-none bg-transparent inline w-11/12 text-gray-500 sm:mb-32 md:mb-0"
               )}
               placeholder="Email address"
               type="text"
