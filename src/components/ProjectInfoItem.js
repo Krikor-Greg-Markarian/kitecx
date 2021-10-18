@@ -3,9 +3,7 @@ import React from "react";
 
 function ProjectInfoItem(props) {
   return (
-    <div
-      className={cn("border-r-2 border-gray-500 p-6 transform translate-y-20")}
-    >
+    <div className={cn("border-r-2 border-gray-500 p-6 mt-12")}>
       <div className={cn("flex justify-center items-center")}>
         <img
           className={cn("w-20 h-20 rounded-full")}
