@@ -139,7 +139,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("pt-20 pb-20 p-5")}>
+      <section className={cn("pt-32 pb-24 p-5")}>
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("col-span-1")}>
             <p className={cn("text-gray-500 font-normal ")}>CHECKOUT PRICING</p>
@@ -234,7 +234,7 @@ export default function Home(props) {
         <TestZIndex />
       </section> */}
 
-      <section className={cn("pt-40")}>
+      <section className={cn("pt-40 sm:mt-96 md:mt-0")}>
         <Footer
           title={"KITECX"}
           contactUs={"Contact us for incredible interior & architect designs."}
