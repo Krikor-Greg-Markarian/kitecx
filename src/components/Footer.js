@@ -43,7 +43,7 @@ function Footer(props) {
           <div className={cn("col-span-1")}>
             <ReadMoreButton
               className={cn(
-                "bg-white p-3 w-5/12 float-right hover:bg-yellow-500  transition duration-500 ease-in-out"
+                "bg-white p-3 w-5/12 hover:bg-yellow-500 sm:float-left md:float-right transition duration-500 ease-in-out"
               )}
               ReadMoreButtonName={props.ReadMoreButtonName}
             />
@@ -138,8 +138,14 @@ function Footer(props) {
               {props.contact}
             </p>
           </div>
-          <div className={cn("col-span-1 transform translate-y-28")}>
-            <p className={cn("text-white text-2xl")}>{props.Explore}</p>
+          <div
+            className={cn(
+              "col-span-1 transform sm:pl-3 md:pl-0 translate-y-28 sm:col-span-2 md:col-span-1"
+            )}
+          >
+            <p className={cn("text-white text-2xl sm:mt-12 md:mt-0")}>
+              {props.Explore}
+            </p>
             <p
               className={cn(
                 "text-gray-500 pt-6 cursor-pointer hover:text-white"
@@ -176,7 +182,11 @@ function Footer(props) {
               {props.OurServices}
             </p>
           </div>
-          <div className={cn("col-span-2 transform translate-y-28 pl-3")}>
+          <div
+            className={cn(
+              "col-span-2 transform translate-y-28 pl-3 sm:mt-3 md:mt-0"
+            )}
+          >
             <p className={cn("text-white text-2xl")}>{props.Newsletter}</p>
             <p className={cn("text-gray-500 pt-6 pb-4")}>{props.signUp}</p>
 
@@ -195,7 +205,11 @@ function Footer(props) {
                 "text-white text-2xl inline hover:text-yellow-600 cursor-pointer"
               )}
             />
-            <div className={cn("pt-5")}>
+            <div
+              className={cn(
+                "pt-5 sm:mt-10 md:mt-0 sm:text-center md:text-left"
+              )}
+            >
               <FaTwitter
                 className={cn(
                   "text-white inline text-2xl cursor-pointer hover:text-yellow-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -223,8 +237,14 @@ function Footer(props) {
 
       <div className={cn("bg-black pt-12 pb-12")}>
         <div className={cn("inline")}>
-          <p className={cn("text-gray-500")}>{props.copyright}</p>
-          <div className={cn("float-right ")}>
+          <p
+            className={cn(
+              "text-gray-500 sm:mt-20 pb-10 sm:text-center md:text-left pb-0 md:mt-0"
+            )}
+          >
+            {props.copyright}
+          </p>
+          <div className={cn("sm:text-center md:text-right ")}>
             <li
               className={cn(
                 "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline"
@@ -242,6 +262,28 @@ function Footer(props) {
           </div>
         </div>
       </div>
+
+      {/* <div className={cn("grid md:grid-cols-2 bg-black pt-12 pb-12")}>
+        <div className={cn("col-span-1 inline")}>
+          <p className={cn("text-gray-500")}>{props.copyright}</p>
+        </div>
+        <div className={cn("flex justify-end")}>
+          <li
+            className={cn(
+              "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline"
+            )}
+          >
+            <a href="">{props.privacy}</a>
+          </li>
+          <li
+            className={cn(
+              "text-gray-500 hover:text-yellow-600 transition duration-500 ease-in-out list-none inline pl-4"
+            )}
+          >
+            <a href="">{props.termsAndConditions}</a>
+          </li>
+        </div>
+      </div> */}
     </div>
   );
 }
