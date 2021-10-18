@@ -214,6 +214,7 @@ export default function Home(props) {
                   }}
                 >
                   <BusinessCardBottom
+                    className={cn("col-span-1")}
                     dolorSign={largeBusinessPlan.dolorSign}
                     price={largeBusinessPlan.price}
                     month={largeBusinessPlan.month}
