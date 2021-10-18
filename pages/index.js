@@ -108,7 +108,7 @@ export default function Home(props) {
       </section>
 
       <section
-        className={cn("pt-28 pb-28 p-4 flex justify-center items-center")}
+        className={cn("pt-28 pb-14 p-4 flex justify-center items-center")}
       >
         <div className={cn("grid md:grid-cols-2 gap-8")}>
           {props.whyWhereitem.map((item, idx) => (
@@ -123,7 +123,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("pt-20")}>
+      <section className={cn("pb-12")}>
         <div className={cn("projectInfoItem")}>
           <div className={cn("grid md:grid-cols-4")}>
             {props.projectInfoItem.map((item, idx) => (
@@ -139,7 +139,7 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("pt-32 pb-24 p-5")}>
+      <section className={cn("p-5")}>
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("col-span-1")}>
             <p className={cn("text-gray-500 font-normal ")}>CHECKOUT PRICING</p>
