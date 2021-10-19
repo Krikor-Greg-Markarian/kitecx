@@ -11,7 +11,6 @@ import {
   FaInstagram,
   FaLongArrowAltRight,
 } from "react-icons/fa";
-import { GrFormNextLink } from "react-icons/gr";
 import ReadMoreButton from "./ReadMoreButton";
 
 function Footer(props) {
@@ -43,7 +42,7 @@ function Footer(props) {
           <div className={cn("col-span-1")}>
             <ReadMoreButton
               className={cn(
-                " p-4 w-5/12 bg-yellow-500 sm:float-left md:float-right sm:mt-4 sm:w-6/12 sm:py-2 md:w-5/12 md:py-0 md:mt-0 transition duration-500 ease-in-out"
+                "p-4 w-5/12 bg-yellow-500 sm:float-left md:float-right sm:mt-4 sm:w-6/12 sm:py-2 md:w-5/12 md:py-0 md:mt-0 transition duration-500 ease-in-out"
               )}
               ReadMoreButtonName={props.ReadMoreButtonName}
             />
