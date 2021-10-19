@@ -22,6 +22,8 @@ export default function Home(props) {
   const [isHovered, setisHovered] = useState(false);
   return (
     <div className={cn("font-bold")}>
+      <link rel="stylesheet" type="text/css" href="csshake.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
       <section>
         <Navbar
           number={"666 888 0000"}
@@ -52,7 +54,7 @@ export default function Home(props) {
         <div className={cn("grid md:grid-cols-2")}>
           <div className={cn("pt-28 pl-6")}>
             <img
-              className={cn("rounded-full ")}
+              className={cn("rounded-full shake-slow")}
               src={
                 "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_516/https://www.gavias-theme.com/wp/kitecx/wp-content/uploads/2021/04/image-6.jpg"
               }

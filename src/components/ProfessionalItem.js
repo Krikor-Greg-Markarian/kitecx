@@ -15,7 +15,7 @@ function ProfessionalItem(props) {
     >
       <div className={cn("pb-3")}>
         <img
-          className={cn("w-20 h-20 rounded-full")}
+          className={cn("w-20 h-20 rounded-full shake-slow")}
           src={props.imageUrl}
           alt=""
         />

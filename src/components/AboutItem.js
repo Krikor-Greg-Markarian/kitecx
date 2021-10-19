@@ -12,7 +12,7 @@ function AboutItem(props) {
         <div className="row-span-1">
           <div className={cn("sm:w-60 h-60")}>
             <img
-              className={cn("w-full sm:w-60 h-60")}
+              className={cn("w-full sm:w-60 h-60 shake-chunk")}
               src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_233,h_244/https://www.gavias-theme.com/wp/kitecx/wp-content/uploads/2021/04/image-4.jpg"
               alt=""
             />

@@ -14,7 +14,7 @@ function WhyWhereItem(props) {
         </div>
       </div>
       <div className={cn("flex-shrink")}>
-        <img className={cn("h-64 w-72")} src={props.imageUrl} alt="" />
+        <img className={cn("h-64 w-72 shake-constant shake")} src={props.imageUrl} alt="" />
       </div>
     </div>
   );

@@ -11,10 +11,10 @@ function ProjectInfoItem(props) {
           alt="icons"
         />
       </div>
-      <p className={cn("text-white text-4xl text-center pt-5")}>
+      <p className={cn("text-white text-4xl text-center pt-5 shake-constant shake")}>
         {props.number}
       </p>
-      <p className={cn("text-gray-500 text-center text-sm pt-2")}>
+      <p className={cn("text-gray-500 text-center text-sm pt-2 shake-little")}>
         {props.text}
       </p>
     </div>
