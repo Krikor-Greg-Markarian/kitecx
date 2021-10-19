@@ -22,8 +22,12 @@ export default function Home(props) {
   const [isHovered, setisHovered] = useState(false);
   return (
     <div className={cn("font-bold")}>
-      <link rel="stylesheet" type="text/css" href="csshake.min.css"/>
-      <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+      <link rel="stylesheet" type="text/css" href="csshake.min.css" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://csshake.surge.sh/csshake.min.css"
+      />
       <section>
         <Navbar
           number={"666 888 0000"}
@@ -61,6 +65,7 @@ export default function Home(props) {
               alt=""
             />
           </div>
+
           <div>
             {props.posts_data.map((item, idx) => (
               <AboutItem
@@ -80,28 +85,27 @@ export default function Home(props) {
 
       <section className={cn("bg-gray-200 pb-28 p-4")}>
         <div className={cn("md:container mx-auto w-8/12")}>
-        <div className={cn("pt-32 pb-12")}>
-          <p className={cn("text-gray-500 font-normal text-lg text-center")}>
-            WHAT WE’RE OFFERING
-          </p>
-          <p className={cn("text-black text-5xl font-normal text-center")}>
-            PROFESSIONAL SERVICES
-          </p>
+          <div className={cn("pt-32 pb-12")}>
+            <p className={cn("text-gray-500 font-normal text-lg text-center")}>
+              WHAT WE’RE OFFERING
+            </p>
+            <p className={cn("text-black text-5xl font-normal text-center")}>
+              PROFESSIONAL SERVICES
+            </p>
+          </div>
+          <div className={cn("grid md:grid-cols-2 lg:grid-cols-3 gap-8")}>
+            {props.professionalItem.map((item, idx) => (
+              <div key={idx} className={cn("col-span-1")}>
+                <ProfessionalItem
+                  imageUrl={item.imageUrl}
+                  title={item.title}
+                  description={item.description}
+                  ReadMoreButtonName={item.ReadMoreButtonName}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className={cn("grid md:grid-cols-2 lg:grid-cols-3 gap-8")}>
-          {props.professionalItem.map((item, idx) => (
-            <div key={idx} className={cn("col-span-1")}>
-              <ProfessionalItem
-                imageUrl={item.imageUrl}
-                title={item.title}
-                description={item.description}
-                ReadMoreButtonName={item.ReadMoreButtonName}
-              />
-            </div>
-          ))}
-        </div>
-        </div>
-       
       </section>
 
       <section className={cn("pt-28")}>
@@ -126,7 +130,9 @@ export default function Home(props) {
 
       <section className={cn("pb-12")}>
         <div className={cn("projectInfoItem")}>
-          <div className={cn("grid md:grid-cols-4 md:container mx-auto w-8/12")}>
+          <div
+            className={cn("grid md:grid-cols-4 md:container mx-auto w-8/12")}
+          >
             {props.projectInfoItem.map((item, idx) => (
               <div key={idx} className={cn("col-span-1")}>
                 <ProjectInfoItem
@@ -233,14 +239,9 @@ export default function Home(props) {
         </div>
       </section>
 
-
-
       <section>
         <TestZIndex />
       </section>
-
-
-
 
       <section className={cn("pt-40 sm:mt-96 md:mt-0")}>
         <Footer
